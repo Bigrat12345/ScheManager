@@ -1,0 +1,16 @@
+<h1> DL </h1>
+
+<script> 
+    function dl(){
+        var url = window.location + '/confirm';
+        console.log(url);
+        url = url.replace('http://', '');
+        url = url.replace('//', '/');
+        console.log(url, "")
+        
+        
+       window.location = 'http://' + url;
+    }
+</script>
+
+<a onClick="dl()"> Download</a>
